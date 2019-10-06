@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ShoesNamespace;
 
 namespace OperatorOverloadingExampleProject {
     class Backpacking {
@@ -27,10 +28,11 @@ namespace OperatorOverloadingExampleProject {
         public Backpacking(String destination) {
             this.destination = destination;
             backpack = new Backpack();
-            shoes = new Shoes("Hoka", "One");
+            shoes = new Shoes("Hoka", "One", 200, 125.95);
             backpack = backpack + shoes;
             backpack.PrintInventory();
         }
+
 
     }
 }

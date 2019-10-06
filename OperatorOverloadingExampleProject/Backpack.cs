@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ShoesNamespace;
 namespace OperatorOverloadingExampleProject {
     class Backpack {
         private List<object> inventory;         // It's paramaterized, but not very well.

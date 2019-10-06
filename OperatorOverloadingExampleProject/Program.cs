@@ -11,7 +11,9 @@ using System.Threading.Tasks;
 namespace OperatorOverloadingExampleProject {
     class Program {
         static void Main(string[] args) {
-            Backpacking backpacking = new Backpacking("Mt. Kathadin");
+            Console.WriteLine("Overloading Example Project");
+            Backpacking backpacking = new Backpacking("Mt. Kathadin");  // Everything happens in the constructor
+            Console.ReadLine();
         }
     }
 }
