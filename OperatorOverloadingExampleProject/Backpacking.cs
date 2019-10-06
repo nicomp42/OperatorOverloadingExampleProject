@@ -28,7 +28,7 @@ namespace OperatorOverloadingExampleProject {
         public Backpacking(String destination) {
             this.destination = destination;
             backpack = new Backpack();
-            shoes = new Shoes("Hoka", "One", 200, 125.95);
+            shoes = new Shoes("Hoka", "One One Clifton 6", 200, 125.95, new Uri("https://www.zappos.com/p/hoka-one-one-clifton-6-black-white/product/9229252/color/151"));
             backpack = backpack + shoes;
             backpack.PrintInventory();
         }

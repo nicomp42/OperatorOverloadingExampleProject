@@ -10,21 +10,23 @@ namespace ShoesNamespace {
         private String brand;
         private String productName;
         private int weightGrams;
-        private float cost;
+        private double cost;
+        private Uri uri;
 
-        public Shoes(String brand, String productName, int weightGrams, float cost) {
+        public Shoes(String brand, String productName, int weightGrams, double cost, Uri uri) {
             this.brand = brand;
             this.productName = productName;
             this.weightGrams = weightGrams;
             this.cost = cost;
+            this.uri = new Uri(uri.ToString());        // Use the copy constructor
         }
 
         public static Backpack operator + (Backpack backpack, Shoes shoes) {
             backpack.addItem(shoes);
             return backpack;
         }
-        public void Print() {
-            Console.WriteLine("Shoes: " + brand + ", " + productName);
+        public override String ToString() {
+            return "Shoes: Brand = " + brand + ", Model = " + productName + ", " + weightGrams + " grams, $" + cost + ", URL = " + uri.ToString();
         }
     }
 }

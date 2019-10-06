@@ -20,7 +20,7 @@ namespace OperatorOverloadingExampleProject {
         public void PrintInventory() {
             foreach (object myItem in inventory) {
                 if (myItem is Shoes) {
-                    ((Shoes)myItem).Print();
+                    Console.WriteLine(((Shoes)myItem).ToString());
                 }
             }
         }
