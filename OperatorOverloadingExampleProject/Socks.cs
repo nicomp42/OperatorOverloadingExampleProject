@@ -1,3 +1,7 @@
+/*
+ * Bill Nicholson
+ * nicholdw@ucmail.uc.edu
+ */
 using System;
 using System.Collections.Generic;
 using System.Linq;
