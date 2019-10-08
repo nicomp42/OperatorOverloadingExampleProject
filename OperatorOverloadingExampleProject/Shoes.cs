@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using OperatorOverloadingExampleProject;
 
 namespace ShoesNamespace {
-    class Shoes {
+    class Shoes : InventoryItem {
         private String brand;
         private String productName;
         private int weightGrams;

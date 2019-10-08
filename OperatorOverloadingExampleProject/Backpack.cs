@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using ShoesNamespace;
 namespace OperatorOverloadingExampleProject {
     class Backpack {
-        private List<object> inventory;         // It's paramaterized, but not very well.
+        private List<InventoryItem> inventoryItem;
         public Backpack() {
             inventory = new List<object>();
         }
@@ -18,8 +18,8 @@ namespace OperatorOverloadingExampleProject {
             inventory.Add(item);
         }
         public void PrintInventory() {
-            foreach (object myItem in inventory) {
-                if (myItem is Shoes) {
+            foreach (object myInventoryItem in inventoryItem) {
+                if (myInventoryItem is Shoes) {
                     Console.WriteLine(((Shoes)myItem).ToString());
                 }
             }

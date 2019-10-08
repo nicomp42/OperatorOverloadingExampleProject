@@ -44,15 +44,27 @@
   <ItemGroup>
     <Compile Include="Backpack.cs" />
     <Compile Include="Backpacking.cs" />
+    <Compile Include="BearCannister.cs" />
     <Compile Include="Camera.cs" />
+    <Compile Include="CommunicationDevice.cs" />
+    <Compile Include="HandSanitizer.cs" />
+    <Compile Include="HeadLamp.cs" />
+    <Compile Include="InventoryItem.cs" />
+    <Compile Include="Knife.cs" />
+    <Compile Include="Phone.cs" />
+    <Compile Include="PopTarts.cs" />
+    <Compile Include="PowerSource.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PuffyJacket.cs" />
+    <Compile Include="RainJacket.cs" />
     <Compile Include="Shoes.cs" />
     <Compile Include="Sleepingbag.cs" />
     <Compile Include="Sleepingpad.cs" />
+    <Compile Include="Socks.cs" />
     <Compile Include="Stove.cs" />
     <Compile Include="Tent.cs" />
+    <Compile Include="TrekkingPoles.cs" />
     <Compile Include="WaterPurificationSystem.cs" />
   </ItemGroup>
   <ItemGroup>
