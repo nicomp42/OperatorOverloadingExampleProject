@@ -17,7 +17,6 @@ namespace OperatorOverloadingExampleProject
         private double mCost;
         private Uri mUri;
 
-
         public String brand {
             get {return mBrand;}
             set {mBrand = value;}
@@ -26,11 +25,11 @@ namespace OperatorOverloadingExampleProject
             get {return mProductName;}
             set {mProductName = value;}
         }
-        public String weightGrams {
+        public int weightGrams {
             get {return mWeightGrams;}
             set {mWeightGrams = value;}
         }
-        public String cost {
+        public double cost {
             get {return mCost;}
             set {mCost = value;}
         }

@@ -12,6 +12,8 @@ using OperatorOverloadingExampleProject;
 namespace ShoesNamespace {
     class Shoes : InventoryItem {
 
+        public Shoes() {}
+
         public Shoes(String brand, String productName, int weightGrams, double cost, Uri uri) {
             this.brand = brand;
             this.productName = productName;

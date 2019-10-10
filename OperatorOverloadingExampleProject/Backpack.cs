@@ -14,7 +14,7 @@ namespace OperatorOverloadingExampleProject {
         public Backpack() {
             inventoryItems = new List<InventoryItem>();
         }
-        public void addItem(object item) {
+        public void addItem(InventoryItem item) {
             inventoryItems.Add(item);
         }
         public void PrintInventory() {
@@ -23,6 +23,19 @@ namespace OperatorOverloadingExampleProject {
                     Console.WriteLine(((Shoes)myInventoryItem).ToString());
                 }
             }
+        }
+        public InventoryItem Find(InventoryItem target) {
+            InventoryItem found = null;
+
+            foreach (InventoryItem inventoryItem in inventoryItems) {
+                if (target == inventoryItem) {
+                    // We have a match 
+                    Console.WriteLine("Found a match ");
+                    found = inventoryItem;
+                    break;
+                }
+            }
+            return found;
         }
     }
 }

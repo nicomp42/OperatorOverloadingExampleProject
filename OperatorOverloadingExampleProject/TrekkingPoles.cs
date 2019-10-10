@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 
 namespace OperatorOverloadingExampleProject
 {
-    class TrekkingPoles
+    class TrekkingPoles : InventoryItem
     {
+        public TrekkingPoles() {}
     }
 }
