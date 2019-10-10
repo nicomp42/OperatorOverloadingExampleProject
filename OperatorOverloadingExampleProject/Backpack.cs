@@ -10,17 +10,17 @@ using System.Threading.Tasks;
 using ShoesNamespace;
 namespace OperatorOverloadingExampleProject {
     class Backpack {
-        private List<InventoryItem> inventoryItem;
+        private List<InventoryItem> inventoryItems;
         public Backpack() {
-            inventory = new List<object>();
+            inventoryItems = new List<inventoryItem>();
         }
         public void addItem(object item) {
             inventory.Add(item);
         }
         public void PrintInventory() {
-            foreach (object myInventoryItem in inventoryItem) {
+            foreach (object myInventoryItem in inventoryItems) {
                 if (myInventoryItem is Shoes) {
-                    Console.WriteLine(((Shoes)myItem).ToString());
+                    Console.WriteLine(((Shoes)myInventoryItem).ToString());
                 }
             }
         }
