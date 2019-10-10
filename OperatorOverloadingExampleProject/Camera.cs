@@ -9,6 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OperatorOverloadingExampleProject {
-    class Camera {
+    class Camera  : InventoryItem {
     }
 }

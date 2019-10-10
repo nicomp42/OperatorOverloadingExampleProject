@@ -42,5 +42,7 @@ namespace OperatorOverloadingExampleProject
         public override String ToString() {
             throw new NotImplementedException("InventoryItem.ToString() not implemented."); 
         }
+        public void AddToBackpack(Backpack backpack){}
+
     }
 }

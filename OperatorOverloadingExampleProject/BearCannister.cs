@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace OperatorOverloadingExampleProject
 {
-    class BearCannister
+    class BearCannister : InventoryItem
     {
         // Yikes do we need this?
     }

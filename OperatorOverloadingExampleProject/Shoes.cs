@@ -29,5 +29,10 @@ namespace ShoesNamespace {
         public override String ToString() {
             return "Shoes: Brand = " + brand + ", Model = " + productName + ", " + weightGrams + " grams, $" + cost + ", URL = " + uri.ToString();
         }
+
+        public new void AddToBackpack(Backpack backpack) {
+            Shoes shoes = new Shoes("Hoka", "One One Clifton 6", 200, 125.95, new Uri("https://www.zappos.com/p/hoka-one-one-clifton-6-black-white/product/9229252/color/151"));
+            backpack = backpack + shoes;
+        }
     }
 }

@@ -32,7 +32,7 @@ namespace OperatorOverloadingExampleProject {
                 Type b = inventoryItem.GetType();
                 if ((Object.ReferenceEquals(a, b))) {
                     // We have a match 
-                    Console.WriteLine("Found a match ");
+//                    Console.WriteLine("Found a match ");
                     found = inventoryItem;
                     break;
                 }

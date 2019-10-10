@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OperatorOverloadingExampleProject
 {
-    class CommunicationDevice
-    {
+    class CommunicationDevice  : InventoryItem {
+    
     }
 }

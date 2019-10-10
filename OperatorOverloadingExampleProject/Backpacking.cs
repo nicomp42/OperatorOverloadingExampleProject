@@ -18,22 +18,43 @@ namespace OperatorOverloadingExampleProject {
         private Stove stove;
         private Tent tent;
         private WaterPurificationSystem waterPurificationSystem;
+        private List<InventoryItem> inventoryItems;
         
         public Backpacking() {
 
         }
         public Backpacking(String destination) {
+            InitInventoryItemList();
+            int foundItems = 0, missingItems = 0;
             this.destination = destination;
             backpack = new Backpack();
-            shoes = new Shoes("Hoka", "One One Clifton 6", 200, 125.95, new Uri("https://www.zappos.com/p/hoka-one-one-clifton-6-black-white/product/9229252/color/151"));
-            backpack = backpack + shoes;
+            AddInventoryItemsToPackpack();
             backpack.PrintInventory();
 
-            if (backpack.Find(new Shoes()) != null) {Console.WriteLine("Found Shoes");
-            } else {Console.WriteLine("Didn't find shoes");}
+            if (backpack.Find(new BearCannister()) != null) {Console.WriteLine("Found Bear Cannister"); foundItems++;} else {Console.WriteLine("Didn't find Bear Cannister"); missingItems++;}
 
-            if (backpack.Find(new TrekkingPoles()) != null) {Console.WriteLine("Found Trekking Poles");
-            } else {Console.WriteLine("Didn't find Trekking Poles");}
+            if (backpack.Find(new Shoes()) != null) {Console.WriteLine("Found Shoes"); foundItems++;} else {Console.WriteLine("Didn't find shoes"); missingItems++;}
+
+            if (backpack.Find(new TrekkingPoles()) != null) {Console.WriteLine("Found Trekking Poles"); foundItems++;} else {Console.WriteLine("Didn't find Trekking Poles"); missingItems++;}
         }
+        private void AddInventoryItemsToPackpack() {
+            foreach (InventoryItem inventoryItem in inventoryItems) {
+                try {
+                    inventoryItem.AddToBackpack(backpack);
+
+//                  Shoes.AddToBackpack(backpack);
+                } catch (Exception ex) {
+                    Console.WriteLine("Error calling InventoryItem.AddToBackpack(): " + inventoryItem.GetType());
+                }
+            }
+//            try {Shoes.AddToBackpack(backpack);} catch (Exception ex) {}
+        }
+        private void InitInventoryItemList() {
+            inventoryItems = new List<InventoryItem>();
+            inventoryItems.Add(new BearCannister());
+            inventoryItems.Add(new Camera());
+            inventoryItems.Add(new CommunicationDevice());
+            inventoryItems.Add(new Shoes());
+        }   
     }
 }
