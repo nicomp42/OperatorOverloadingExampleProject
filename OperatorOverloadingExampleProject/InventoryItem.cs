@@ -17,15 +17,28 @@ namespace OperatorOverloadingExampleProject
         private double mCost;
         private Uri mUri;
 
-        public Uri uri {
-            get {return mUri;}
-            set {mUri = value;}
-        }
+
         public String brand {
             get {return mBrand;}
             set {mBrand = value;}
         }
+        public String productName {
+            get {return mProductName;}
+            set {mProductName = value;}
+        }
+        public String weightGrams {
+            get {return mWeightGrams;}
+            set {mWeightGrams = value;}
+        }
+        public String cost {
+            get {return mCost;}
+            set {mCost = value;}
+        }
 
+        public Uri uri {
+            get {return mUri;}
+            set {mUri = value;}
+        }
 
         public override String ToString() {
             throw new NotImplementedException("InventoryItem.ToString() not implemented."); 

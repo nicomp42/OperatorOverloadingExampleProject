@@ -12,10 +12,10 @@ namespace OperatorOverloadingExampleProject {
     class Backpack {
         private List<InventoryItem> inventoryItems;
         public Backpack() {
-            inventoryItems = new List<inventoryItem>();
+            inventoryItems = new List<InventoryItem>();
         }
         public void addItem(object item) {
-            inventory.Add(item);
+            inventoryItems.Add(item);
         }
         public void PrintInventory() {
             foreach (object myInventoryItem in inventoryItems) {
