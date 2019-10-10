@@ -9,8 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 namespace OperatorOverloadingExampleProject
 {
-    abstract class InventoryItem
+    class InventoryItem
     {
-        public override abstract String ToString();
+        private String mBrand;
+        private String mProductName;
+        private int mWeightGrams;
+        private double mCost;
+        private Uri mUri;
+
+        public override String ToString() {
+            throw new NotImplementedException("InventoryItem.ToString() not implemented."); 
+        }
     }
 }

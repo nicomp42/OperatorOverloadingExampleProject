@@ -11,11 +11,6 @@ using OperatorOverloadingExampleProject;
 
 namespace ShoesNamespace {
     class Shoes : InventoryItem {
-        private String brand;
-        private String productName;
-        private int weightGrams;
-        private double cost;
-        private Uri uri;
 
         public Shoes(String brand, String productName, int weightGrams, double cost, Uri uri) {
             this.brand = brand;
