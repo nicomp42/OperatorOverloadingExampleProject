@@ -28,7 +28,9 @@ namespace OperatorOverloadingExampleProject {
             InventoryItem found = null;
 
             foreach (InventoryItem inventoryItem in inventoryItems) {
-                if (target == inventoryItem) {
+                Type a = target.GetType();
+                Type b = inventoryItem.GetType();
+                if ((Object.ReferenceEquals(a, b))) {
                     // We have a match 
                     Console.WriteLine("Found a match ");
                     found = inventoryItem;
