@@ -12,5 +12,6 @@ namespace OperatorOverloadingExampleProject
 {
     class BearCannister
     {
+        // Yikes do we need this?
     }
 }
